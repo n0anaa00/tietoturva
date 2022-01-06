@@ -30,8 +30,6 @@ CREATE TABLE userspecs (
 
 
 
-INSERT INTO asiakas VALUES (1, 'peltsi','Pera','Järvinen','Raatteentie 8','88900','Kuhmo',0401230432, 'pera@roudarit.fi') ;
-INSERT INTO asiakas VALUES (2, 'mikko','Mikko','Aho','Puistokatu 68','91500','Muhos',0403213321, 'mikko@talkkarit.fi') ;
-INSERT INTO asiakas VALUES (3, 'kille','Kimmo','Revontuli','Umpikuja 33','93100','Pudasjärvi',040765657, 'kille@hemmot.fi') ;
+
 
 
