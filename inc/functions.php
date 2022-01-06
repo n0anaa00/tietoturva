@@ -31,7 +31,7 @@ function returnError(PDOException $pdoex): void {
 function checkUser(PDO $dbcon, $username, $passwd){
     //Sanitoidaan muuttujat
     $username = filter_var($username, FILTER_SANITIZE_STRING);
-    $passwd = filter_var($passwd, FILTER_SANITIZE_STRING);
+    $password = filter_var($passwd, FILTER_SANITIZE_STRING);
 
     try{
         $sql = "SELECT password FROM user WHERE username=?";
@@ -42,7 +42,7 @@ function checkUser(PDO $dbcon, $username, $passwd){
 
         foreach($rows as $row){
             $pw = $row["password"];
-            if( $pw === $passwd ){
+            if( $pw === $password ){
                 return true;
             }
         }
